@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HouseRental.Domain.Entities
 {
@@ -13,11 +8,11 @@ namespace HouseRental.Domain.Entities
         [Key]
         public Guid Id { get; set; }
         [Required]
-        public string Maker { get; set; } = null!;
+        public string Type { get; set; } = null!;
         [Required]
-        public string Model { get; set; } = null!;
+        public string Address { get; set; } = null!;
         [Required]
-        public decimal RentalCostPerDay { get; set; }
+        public decimal RentalCostPerMonth { get; set; }
         public bool IsAvailable { get; set; } = true;
 
         [InverseProperty("House")]
