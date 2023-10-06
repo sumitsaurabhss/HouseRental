@@ -21,7 +21,7 @@ namespace HouseRental.Infrastructure.Contexts
                 .HasColumnType("decimal(18,2)");
 
             modelBuilder.Entity<House>()
-               .Property(p => p.RentalCost)
+               .Property(p => p.RentalCostPerMonth)
                .HasColumnType("decimal(18,2)");
 
 

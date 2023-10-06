@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouseRental.Application", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouseRental.Infrastructure", "HouseRental.Infrastructure\HouseRental.Infrastructure.csproj", "{CF639687-788F-4430-8C57-3086A5275EE7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouseRental.API", "HouseRental.API\HouseRental.API.csproj", "{579922E6-3F22-47F9-BAED-759D6BA82487}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{CF639687-788F-4430-8C57-3086A5275EE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF639687-788F-4430-8C57-3086A5275EE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF639687-788F-4430-8C57-3086A5275EE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{579922E6-3F22-47F9-BAED-759D6BA82487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{579922E6-3F22-47F9-BAED-759D6BA82487}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{579922E6-3F22-47F9-BAED-759D6BA82487}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{579922E6-3F22-47F9-BAED-759D6BA82487}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
