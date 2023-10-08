@@ -11,6 +11,7 @@ namespace HouseRental.Infrastructure.SeedData
             builder.HasData(
                 new House
                 {
+                    Id = Guid.NewGuid(),
                     Type = "2BHK",
                     Address = "Andrews Ganj, South Delhi",
                     RentalCostPerMonth = 20000,
@@ -18,6 +19,7 @@ namespace HouseRental.Infrastructure.SeedData
                 },
                 new House
                 {
+                    Id = Guid.NewGuid(),
                     Type = "3BHK",
                     Address = "Habibganj, Bhopal",
                     RentalCostPerMonth = 22000,
@@ -25,6 +27,7 @@ namespace HouseRental.Infrastructure.SeedData
                 },
                 new House
                 {
+                    Id = Guid.NewGuid(),
                     Type = "2BHK",
                     Address = "Budhha Colony, Patna",
                     RentalCostPerMonth = 15000,
@@ -32,6 +35,7 @@ namespace HouseRental.Infrastructure.SeedData
                 },
                 new House
                 {
+                    Id = Guid.NewGuid(),
                     Type = "1BHK",
                     Address = "Cyber city, Gurugram",
                     RentalCostPerMonth = 10000,

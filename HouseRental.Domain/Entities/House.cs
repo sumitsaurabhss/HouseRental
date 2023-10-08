@@ -18,10 +18,10 @@ namespace HouseRental.Domain.Entities
         [InverseProperty("House")]
         public Rental Rental { get; set; }
 
-        public House()
-        {
-            Id = Guid.NewGuid();
-            Rental = new Rental();
-        }
+        //public House()
+        //{
+        //    Id = Guid.NewGuid();
+        //    Rental = new Rental();
+        //}
     }
 }

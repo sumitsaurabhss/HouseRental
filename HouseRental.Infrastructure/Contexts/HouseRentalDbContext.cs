@@ -28,8 +28,8 @@ namespace HouseRental.Infrastructure.Contexts
             base.OnModelCreating(modelBuilder);
         }
 
-        public DbSet<House> Houses { get; set; } = null!;
-        public DbSet<Rental> Rentals { get; set; } = null!;
-        public DbSet<User> Users { get; set; } = null!;
+        public DbSet<House> Houses { get; set; }
+        public DbSet<Rental> Rentals { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }

@@ -21,10 +21,10 @@ namespace HouseRental.Domain.Entities
         public ICollection<Rental> Rentals { get; set; }
 
 
-        public User()
-        {
-            Id = Guid.NewGuid();
-            Rentals = new List<Rental>();
-        }
+        //public User()
+        //{
+        //    Id = Guid.NewGuid();
+        //    Rentals = new List<Rental>();
+        //}
     }
 }

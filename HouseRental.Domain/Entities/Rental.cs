@@ -28,11 +28,11 @@ namespace HouseRental.Domain.Entities
         public House House { get; set; }
 
 
-        public Rental()
-        {
-            Id = Guid.NewGuid();
-            House = new House();
-            User = new User();
-        }
+        //public Rental()
+        //{
+        //    Id = Guid.NewGuid();
+        //    House = new House();
+        //    User = new User();
+        //}
     }
 }
