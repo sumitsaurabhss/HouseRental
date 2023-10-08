@@ -18,7 +18,7 @@ builder.Services.ConfigureApplicationServices();
 builder.Services.AddDbContext<HouseRentalDbContext>(options =>
 {
     options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),
-        b => b.MigrationsAssembly("CarRental.API"))
+        b => b.MigrationsAssembly("HouseRental.API"))
             .EnableSensitiveDataLogging()
             .UseLoggerFactory(LoggerFactory.Create(builder => builder.AddDebug()));
 });
