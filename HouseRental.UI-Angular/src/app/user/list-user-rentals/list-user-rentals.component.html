@@ -1,0 +1,32 @@
+<div class="container">
+    <h2>Rental Details</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Address</th>
+          <th>Start Date</th>
+          <th>End Date</th>
+          <th>Total Cost</th>
+          <th>Return</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let rentalDetail of rentalDetailsList">
+          <td>{{ rentalDetail.type }}</td>
+          <td>{{ rentalDetail.address }}</td>
+          <td>{{ rentalDetail.rentalStartDate | date }}</td>
+          <td>{{ rentalDetail.rentalEndDate | date }}</td>
+          <td>{{ rentalDetail.totalRentalCost | currency:'INR':'symbol-narrow' }}</td>
+          <td>
+            <button *ngIf="!rentalDetail.isReturned" (click)="return(rentalDetail)" class="btn btn-outline-warning">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z"/>
+              </svg> Return
+            </button>
+            <span *ngIf="rentalDetail.isReturned" class="text-warning">Returned</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</div>

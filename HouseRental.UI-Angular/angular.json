@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "CarRental.UI-Angular": {
+    "HouseRental.UI-Angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/car-rental.ui-angular",
+            "outputPath": "dist/house-rental.ui-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "CarRental.UI-Angular:build:production"
+              "browserTarget": "HouseRental.UI-Angular:build:production"
             },
             "development": {
-              "browserTarget": "CarRental.UI-Angular:build:development"
+              "browserTarget": "HouseRental.UI-Angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "CarRental.UI-Angular:build"
+            "browserTarget": "HouseRental.UI-Angular:build"
           }
         },
         "test": {

@@ -1,0 +1,21 @@
+<div class="container">
+    <h2>Login Form</h2>
+    <form #form="ngForm" (ngSubmit)="userLogin()">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" [(ngModel)]="userCredentials.email" class="form-control" required #email="ngModel">
+            <div *ngIf="email.invalid && (email.dirty || email.touched)" class="text-danger alert">
+                <div *ngIf="email.errors?.['required']">Email is required.</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" [(ngModel)]="userCredentials.password" class="form-control" required #password="ngModel">
+            <div *ngIf="password.invalid && (password.dirty || password.touched)" class="text-danger">
+                <div *ngIf="password.errors?.['required']">Password is required.</div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-outline-success mt-3" [disabled]="form.invalid">Login</button>
+    </form>
+  </div>
+  

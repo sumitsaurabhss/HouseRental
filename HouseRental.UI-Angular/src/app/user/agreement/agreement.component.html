@@ -1,0 +1,22 @@
+<div class="container mb-5">
+    <h2>Rental Agreement</h2>
+    <form>
+      <div class="form-group">
+        <label for="type">Type:</label>
+        <input type="text" id="type" name="type" [(ngModel)]="rentalAgreement.type" class="form-control" disabled="true">
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" [(ngModel)]="rentalAgreement.address" class="form-control" disabled="true">
+      </div>
+      <div class="form-group">
+        <label for="rentalDuration">Rental Duration (in months):</label>
+        <input type="number" id="rentalDuration" name="rentalDuration" [(ngModel)]="rentalAgreement.rentalDurationInMonths" class="form-control" (ngModelChange)="onDurationChange()">
+      </div>
+      <div class="form-group">
+        <label for="totalRentalCost">Total Rental Cost:</label>
+        <input type="number" id="totalRentalCost" name="totalRentalCost" [(ngModel)]="rentalAgreement.totalRentalCost" class="form-control" disabled="true">
+      </div>
+      <button class="btn btn-outline-success mt-3" (click)="continue()">Accept Agreement</button>
+    </form>
+</div> 

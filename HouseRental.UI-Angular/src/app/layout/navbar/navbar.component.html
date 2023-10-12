@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg sticky" style="background-color: #e3f2fd;">
+    <div class="container">
+      <a class="navbar-brand" href="#">Car Rental</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" *ngIf="!isAdmin" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" *ngIf="isAdmin" aria-current="page" routerLink="admin">Home</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link active" *ngIf="!isAdmin && currentLoggedInUserName" aria-current="page" routerLink = "rentals">My Agreements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" *ngIf="isAdmin" aria-current="page" routerLink = "admin/rentals">Agreements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" *ngIf="isAdmin" aria-current="page" routerLink = "admin/cars">Cars</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" *ngIf="isAdmin" aria-current="page" routerLink = "admin/cars/add">Add Car</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" *ngIf="!isAdmin && !currentLoggedInUserName" aria-current="page" routerLink = "login">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" *ngIf="!isAdmin && !currentLoggedInUserName" aria-current="page" routerLink = "signup">Register</a>
+          </li>
+          <li class="nav-item">
+            <a (click)="userLogOut()" class="nav-link active" *ngIf="currentLoggedInUserName"  aria-current="page" style="cursor:pointer; color:red" >Sign-Out</a>
+          </li>
+        </ul>
+      </div>
+
+      <span class="nav-item d-flex">
+        <a class="nav-link active" *ngIf="currentLoggedInUserName" aria-current="page"><b>Hi, {{currentLoggedInUserName}}!</b></a>
+      </span>
+
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
