@@ -14,7 +14,17 @@ A sample application built for renting houses by Sumit Saurabh as a part of lear
 
 ### Registered user screens
 
+![image](https://github.com/sumitsaurabhss/HouseRental/assets/59194021/be091700-f47f-4416-b7d9-ad50c6ec7453)
+
+![image](https://github.com/sumitsaurabhss/HouseRental/assets/59194021/77a3a4a0-274f-45f4-bf8f-2753654e184c)
+
+
 ### Admin screens
+
+![image](https://github.com/sumitsaurabhss/HouseRental/assets/59194021/23cfb505-f2aa-470a-af70-2e31f1a9a9a7)
+
+![image](https://github.com/sumitsaurabhss/HouseRental/assets/59194021/d4a015b6-bce3-4cca-bbc8-12a3e3326caf)
+
 
 ### Flow for renting a house
 
@@ -30,4 +40,8 @@ A sample application built for renting houses by Sumit Saurabh as a part of lear
 
 ### Flow for user register & login
 
+### Filters
+
 ### Validation screens
+
+### Responsiveness
