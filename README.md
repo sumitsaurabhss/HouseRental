@@ -4,6 +4,14 @@ A sample application built for renting houses by Sumit Saurabh as a part of lear
 ## Screenshots
 ### Anonymous user screens
 
+![image](https://github.com/sumitsaurabhss/HouseRental/assets/59194021/559c0462-92e4-499d-98c8-9754161b6f4e)
+
+![image](https://github.com/sumitsaurabhss/HouseRental/assets/59194021/81fbdeeb-9a94-48f9-b01f-35d6770af0dd)
+
+![image](https://github.com/sumitsaurabhss/HouseRental/assets/59194021/1c19a53b-e129-4f21-a3f9-52d4b051cc3b)
+
+
+
 ### Registered user screens
 
 ### Admin screens
