@@ -25,6 +25,8 @@ A sample application built for renting houses by Sumit Saurabh as a part of lear
 
 ![image](https://github.com/sumitsaurabhss/HouseRental/assets/59194021/d4a015b6-bce3-4cca-bbc8-12a3e3326caf)
 
+![image](https://github.com/sumitsaurabhss/HouseRental/assets/59194021/21ca7e1e-282c-4283-9e5f-3aa316a19705)
+
 
 ### Flow for renting a house
 
